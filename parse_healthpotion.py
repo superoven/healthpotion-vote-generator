@@ -4,7 +4,7 @@ import random
 
 
 from datetime import date, timedelta, datetime
-from googlesearch import search
+# from googlesearch import search
 
 # import datetime
 # import pytz
@@ -99,8 +99,8 @@ def print_command(args):
     print("You have two votes to use, and the vote closes this Friday evening.\n")
     for i, line in enumerate(lines):
        print(f"{i + 1} - {line}")
-    previous_game = args.game_name
-    print(f"\nLooking forward to discussing {previous_game} with you all on Thursday ({next_discussion_datetime_str} 7PM PST)!")
+    # previous_game = args.game_name
+    print(f"\nLooking forward to discussing {args.game_name} with you all on Thursday ({next_discussion_datetime_str} 7PM PST)!")
     # print(cmd_str)
 
 if __name__ == "__main__":
