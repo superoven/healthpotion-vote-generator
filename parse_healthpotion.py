@@ -1,5 +1,7 @@
 import arrow
+import argparse
 import random
+
 
 from datetime import date, timedelta, datetime
 from googlesearch import search
@@ -53,13 +55,11 @@ def get_next_discussion_day():
 
 def select_sample():
     inp_file = open("full_choice_list.txt", "r")
-    lines = [f"{line.strip()}" for line in inp_file.readlines() if line]
+    lines = ['\n'.join(line.strip().rsplit(' ', 1)) for line in inp_file.readlines() if line]
     subset = random.sample(lines, NUM_OPTIONS)
-    # for line in subset:
-    #     print(line)
     return subset
 
-def print_command():
+def print_command(args):
     hard_coded = False
     if hard_coded:
         inp_file = open("input.txt", "r")
@@ -99,15 +99,14 @@ def print_command():
     print("You have two votes to use, and the vote closes this Friday evening.\n")
     for i, line in enumerate(lines):
        print(f"{i + 1} - {line}")
-    previous_game = "Half-Life 2"
+    previous_game = args.game_name
     print(f"\nLooking forward to discussing {previous_game} with you all on Thursday ({next_discussion_datetime_str} 7PM PST)!")
     # print(cmd_str)
 
 if __name__ == "__main__":
-    # TODO: Argparse the expiry date_string
-    # print(get_all_discussion_days())
-    # print(get_next_discussion_day())
-    # select_sample()
-    print_command()
+    parser = argparse.ArgumentParser(description='Process some game name.')
+    parser.add_argument('game_name', type=str, help='name of the game')
+    args = parser.parse_args()
+    print_command(args)
     # print("----\nRemember to save to input.txt with hardcoded and to set the expire_datetime_str properly!")
     # print(" - Check whether or not the date for the vote is also correct")
