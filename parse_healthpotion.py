@@ -11,16 +11,16 @@ from datetime import date, timedelta, datetime
 
 # utc=pytz.UTC
 
-NUM_OPTIONS = 5
+NUM_OPTIONS = 6
 
-def get_steam_url(name_str):
-    # domains = ["store.steampowered.com", "itch.io"]
-    # for i in search(f"{name_str} game", tld="steampowered.com"):
-    # for domain in domains:
-    # TODO: Do this in parallel
-    for i in search(f"{name_str} game steam -steamunlocked"):
-        return i
-    return ""
+# def get_steam_url(name_str):
+#     # domains = ["store.steampowered.com", "itch.io"]
+#     # for i in search(f"{name_str} game", tld="steampowered.com"):
+#     # for domain in domains:
+#     # TODO: Do this in parallel
+#     for i in search(f"{name_str} game steam -steamunlocked"):
+#         return i
+#     return ""
 
 def get_all_discussion_days():
     # TODO: choose the next year if current month is December
@@ -96,7 +96,7 @@ def print_command(args):
 
     #cmd_str = f'pm!cmd -q "{vote_title}" -l "{converted_date_str}" -a -o "{concat_str}" -mc "{num_votes}" -h -d "{expire_datetime_str} 5pm PST"'
     print(f"@everyone Let's vote on the game to discuss on {disc_day.format('MMMM DD')}!\n")
-    print("You have two votes to use, and the vote closes this Friday evening.\n")
+    print("You can vote on as many as you like, and the vote closes next Friday evening.\n")
     for i, line in enumerate(lines):
        print(f"{i + 1} - {line}")
     # previous_game = args.game_name
