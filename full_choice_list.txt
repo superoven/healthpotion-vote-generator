@@ -1,7 +1,5 @@
 Insurmountable <https://store.steampowered.com/app/1385100/Insurmountable/>
 Shadow Tactics: Blades of the Shogun <https://store.steampowered.com/app/418240/Shadow_Tactics_Blades_of_the_Shogun/>
-Valkyria Chronicles <https://store.steampowered.com/app/294860/Valkyria_Chronicles/>
-Company of Heroes 2: Ardennes Assault <https://store.steampowered.com/app/317850/Company_of_Heroes_2__Ardennes_Assault/>
 Sekiro: Shadows Die Twice <https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/>
 Everything <https://store.steampowered.com/app/582270/Everything/>
 Minishoot' Adventures <https://store.steampowered.com/app/1634860/Minishoot_Adventures/>
@@ -19,14 +17,10 @@ Tiny Bookshop <https://store.steampowered.com/app/2133760/Tiny_Bookshop/>
 Syberia <https://store.steampowered.com/app/46500/Syberia/>
 Easy Delivery Co. <https://store.steampowered.com/app/3293010/Easy_Delivery_Co/>
 Payday 3 <https://store.steampowered.com/app/1272080/PAYDAY_3/>
-Nubby's Number Factory <https://store.steampowered.com/app/3191030/Nubbys_Number_Factory/>
-Yooka-Replaylee <https://store.steampowered.com/app/2448020/YookaReplaylee/>
 9 Kings <https://store.steampowered.com/app/2784470/9_Kings/>
-Azoove <https://store.steampowered.com/app/2435450/Azoove/>
 Skate Story <https://store.steampowered.com/app/1263240/Skate_Story/>
 Escape from Duckov <https://store.steampowered.com/app/3167020/Escape_From_Duckov/>
 Keeper <https://store.steampowered.com/app/3043580/Keeper/>
-ZeroRanger <https://store.steampowered.com/app/809020/ZeroRanger/>
 Forestrike <https://store.steampowered.com/app/2325920/Forestrike/>
 Darkwood <https://store.steampowered.com/app/274520/Darkwood/>
 ARC Raiders <https://store.steampowered.com/app/1808500/ARC_Raiders/>
@@ -43,3 +37,14 @@ Another Crab's Treasure <https://store.steampowered.com/app/1887840/Another_Crab
 Obey the Voice <https://store.steampowered.com/app/3919190/Obey_the_Voice/>
 Consume Me <https://store.steampowered.com/app/2359120/Consume_Me/>
 Dice A Million <https://store.steampowered.com/app/3430340/Dice_A_Million/>
+Marathon <https://store.steampowered.com/app/3065800/Marathon/>
+Crimson Desert <https://store.steampowered.com/app/3321460/Crimson_Desert/>
+TR-49 <https://store.steampowered.com/app/3838370/TR49/>
+Slay the Spire 2 <https://store.steampowered.com/app/2868840/Slay_the_Spire_2/>
+RUBATO <https://store.steampowered.com/app/2244030/RUBATO/>
+Horsey Game <https://store.steampowered.com/app/3602570/Horsey_Game/>
+MOUSE: P.I. For Hire <https://store.steampowered.com/app/2416450/MOUSE_PI_For_Hire/>
+Psychonauts <https://store.steampowered.com/app/3830/Psychonauts/>
+Clair Obscur: Expedition 33 <https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/>
+Baby Steps <https://store.steampowered.com/app/1281040/Baby_Steps/>
+My Summer Car <https://store.steampowered.com/app/516750/My_Summer_Car/>
