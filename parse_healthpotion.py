@@ -4,26 +4,10 @@ import random
 
 
 from datetime import date, timedelta, datetime
-# from googlesearch import search
-
-# import datetime
-# import pytz
-
-# utc=pytz.UTC
 
 NUM_OPTIONS = 6
 
-# def get_steam_url(name_str):
-#     # domains = ["store.steampowered.com", "itch.io"]
-#     # for i in search(f"{name_str} game", tld="steampowered.com"):
-#     # for domain in domains:
-#     # TODO: Do this in parallel
-#     for i in search(f"{name_str} game steam -steamunlocked"):
-#         return i
-#     return ""
-
 def get_all_discussion_days():
-    # TODO: choose the next year if current month is December
     target_year = arrow.now().year + 1 if arrow.now().month == 12 else arrow.now().year
     curr_datetime = datetime(target_year, 1, 1)
     year = curr_datetime.year
@@ -45,7 +29,6 @@ def get_all_discussion_days():
             curr_month += 1
     return ret
 
-# TODO: Use this and fix this lol
 def get_next_discussion_day():
     today = arrow.now().date()
     check_time = today + timedelta(days=20)
@@ -67,10 +50,6 @@ def print_command(args):
     else:
         lines = select_sample()
 
-    # Don't use
-    # TODO: Do this in parallel
-    # lines = [f"{line.strip().title()} <{get_steam_url(line)}>" for line in inp_file.readlines() if len(line.strip()) > 0]
-
     # Randomize results
     random.shuffle(lines)
     concat_str = ", ".join(lines)
@@ -83,10 +62,6 @@ def print_command(args):
     curr_datetime = arrow.now().datetime
     d = curr_datetime.date()
 
-    # Day "4" is Friday
-    # d += timedelta(days = (4 - d.weekday()) % 7)
-    # expire_datetime_str = arrow.get(d).format("DD.MM.YYYY")
-
     # Day "3" is Thursday
     d += timedelta(days = (3 - d.weekday()) % 7)
     next_discussion_datetime_str = arrow.get(d).format("MM/DD/YYYY")
@@ -94,19 +69,14 @@ def print_command(args):
     # Calculate number of votes available depending on how big the list
     num_votes = int(len(lines) // 2.5)
 
-    #cmd_str = f'pm!cmd -q "{vote_title}" -l "{converted_date_str}" -a -o "{concat_str}" -mc "{num_votes}" -h -d "{expire_datetime_str} 5pm PST"'
     print(f"@everyone Let's vote on the game to discuss on {disc_day.format('MMMM DD')}!\n")
     print("You can vote on as many as you like, and the vote closes next Friday evening.\n")
     for i, line in enumerate(lines):
        print(f"{i + 1} - {line}")
-    # previous_game = args.game_name
     print(f"\nLooking forward to discussing {args.game_name} with you all on Thursday ({next_discussion_datetime_str} 7PM PST)!")
-    # print(cmd_str)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some game name.')
     parser.add_argument('game_name', type=str, help='name of the game')
     args = parser.parse_args()
     print_command(args)
-    # print("----\nRemember to save to input.txt with hardcoded and to set the expire_datetime_str properly!")
-    # print(" - Check whether or not the date for the vote is also correct")
